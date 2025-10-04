@@ -52,11 +52,21 @@ html, body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 55px;
     background-color: rgba(250, 250, 250, 0.7);
 }
 
 .person-info {
+    position: relative;
+    top: -6px;
     padding: 10px;
     color: rgb(10, 10, 10);
+}
+
+.person-info-name {
+    color: rgb(55, 55, 55);
+}
+
+.person-info-quantity {
+    color: rgb(55, 55, 55);
 }

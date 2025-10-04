@@ -10,6 +10,7 @@
 					<div class="person-overlay">
 						<div class="person-info">
 							<div class="person-info-name">{{ $person->get('name') }}</div>
+							<div class="person-info-quantity"><i class="fa-solid fa-gift"></i>&nbsp;{{ Present::getPersonQuantity($person->get('id')) }}</div>
 						</div>
 					</div>
 				</div>

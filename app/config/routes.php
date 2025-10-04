@@ -19,5 +19,6 @@ return [
     array('/', 'GET', 'index@index'),
     array('/person/add', 'POST', 'person@add_person'),
     array('/person/view/{id}', 'GET', 'person@view_person'),
+    array('/present/view/{id}', 'GET', 'present@view_present'),
     array('$404', 'ANY', 'error404@index')
 ];

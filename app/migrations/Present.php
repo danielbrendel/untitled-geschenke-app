@@ -32,6 +32,7 @@ class Present_Migration {
         $this->database = new Asatru\Database\Migration('Present', $this->connection);
         $this->database->drop();
         $this->database->add('id INT NOT NULL AUTO_INCREMENT PRIMARY KEY');
+        $this->database->add('person INT NOT NULL');
         $this->database->add('title VARCHAR(512) NOT NULL');
         $this->database->add('description TEXT NULL');
         $this->database->add('delivered DATETIME NULL');

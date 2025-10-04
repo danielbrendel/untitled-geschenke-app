@@ -9,6 +9,11 @@ import './../sass/app.scss';
 window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
+import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+import '@fortawesome/fontawesome-free/js/all.min.js';
+import '@fortawesome/fontawesome-free/js/solid.js';
+import '@fortawesome/fontawesome-free/js/brands.js';
+
 window.spawnVueInstance = function(el) {
     return new Vue({
         el: el,

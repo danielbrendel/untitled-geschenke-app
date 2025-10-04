@@ -39,9 +39,11 @@ class PersonController extends BaseController {
         $person_id = $request->arg('id');
 
         $person = Person::getPersonInfo($person_id);
+        $presents = Present::getForPerson($person_id);
 
         return parent::view(['content', 'person'], [
-            'person' => $person
+            'person' => $person,
+            'presents' => $presents
         ]);
     }
 }
